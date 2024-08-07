@@ -1,0 +1,251 @@
+*{
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+   font-family: "Bona Nova SC", serif;
+}
+#container{
+   width: 100%;
+   height: 100vh;
+   position: relative;
+}
+
+nav{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-left: 100px;
+}
+.logo{
+   width: 200px;
+   height: 200px;
+}
+
+.listItems{
+   list-style: none;
+   display: inline;
+   margin: 0px 20px;
+}
+.links{
+   text-decoration: none;
+   color: black;
+   font-weight: 700;
+}
+.links:hover{
+   text-decoration: underline;
+   color: brown;
+}
+
+.homeContents{
+   margin: 13% 0px 0px 8%;
+}
+
+#username{
+   font-size: 50px;
+   font-family: "Bebas Neue", sans-serif;
+   margin-bottom: 20px;
+}
+
+#lname{
+   font-family: "Edu AU VIC WA NT Hand", cursive;
+   color: rgb(187, 93, 5);
+}
+
+#userdetails{
+   line-height: 1.2;
+}
+
+#download{
+   background-color: black;
+   color: white;
+   text-decoration: none;
+   border-radius: 10px;
+   padding: 10px;
+   display: inline-block;
+   margin-top: 20px;
+}
+
+.homeImages{
+ width: 50%;
+ height: 75%;
+ position: absolute;
+ right: 30px;
+ bottom: 0px;
+}
+
+.group1{
+   position: absolute;
+   height: 70%;
+   bottom: 0px;
+   left: 70% ;
+   transform: translateX(-50%);
+   transition: bottom 2s,left 1s;
+}
+.homeImages:hover #shape{
+   bottom: 70px;
+
+}
+.homeImages:hover #girl{
+   left: 40%;
+}
+
+#about{
+margin: 8% 8% 0% 8%;
+}
+.sectionHead{
+   text-align: center;
+}
+.mainHead{
+   font-size: 30px;
+}
+.subHead{
+   font-size: 20px;
+   color: rgb(120, 222, 18);
+}
+.aboutBody{
+   margin-top: 60px;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   align-items: center;
+   gap: 20px;
+}
+.img1{
+   width: 80%;
+}
+.aboutContent{
+   font-size: 18px;
+   text-align: justify;
+}
+.informations{
+   margin-top: 1.3rem;
+}
+.infoBox{
+   margin-bottom: 20px;
+   display: flex;
+   align-items: center;
+}
+.infoBox>span{
+   margin-left: 1rem;
+}
+
+#skill{
+   margin: 8% 8% 0px 8%;
+}
+.skillContent{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   align-items: center;
+   gap: 2rem;
+   margin-top: 20px;
+}
+.img2{
+   width: 100%;
+}
+.bars{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1rem 0px;
+   position: relative;
+}
+.barHead,.barPercent{
+font-weight: 500;
+font-size: 1.2rem;
+}
+.baseBar{
+   width: 100%;
+   height: 0.5rem;
+   background-color: black;
+   border-radius: 10px;
+   position: absolute;
+   bottom: 0px;
+}
+.htmlBar{
+   background-color: darkorange;
+   width: 91%;
+}
+.cssBar{
+   background-color: darkorange;
+   width: 85%;
+}
+.jsBar{
+   background-color: darkorange;
+   width: 86%;
+}
+.reactBar{
+   background-color: darkorange;
+   width: 89%;
+}
+
+.iconCollection{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 2.5rem;
+}
+.icon{
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0px 10px;
+}
+.brands{
+   color: black;
+   font-size: 1.8rem;
+}
+.icon:hover{
+   background-image: linear-gradient(rgb(246, 246, 246), rgb(218, 173, 25), rgb(247, 238, 250));
+}
+
+.icon:hover.brands{
+   color: white;
+   /* animation */
+   animation: rotate 3s ;
+   
+}
+@keyframes rotate{
+   0%{
+       transform: rotate(30deg);
+   }
+   20%{
+       transform: rotate(-30deg);
+   }
+   40%{
+       transform: rotate(30deg);
+   }
+   60%{
+       transform: rotate(-30deg);
+   }80%{
+       transform: rotate(30deg);
+   }
+   100%{
+       transform: rotate(-30deg);
+   }
+}
+footer{
+   margin: 8% 0px 0px 0px;
+}
+#copyright{
+   text-align: center;
+   font-weight: 600;
+}
+.upArroaw{
+   float: right;
+   margin: -30px 30px 30px 0px  ;
+}
+html{
+   scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+   width: 10px;
+}
+::-webkit-scrollbar-track{
+   background-color: azure;
+}
+::-webkit-scrollbar-thumb{
+   background-color: orange;
+   border-radius: 10px;
+}
